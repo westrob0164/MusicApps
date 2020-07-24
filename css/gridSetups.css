@@ -1,0 +1,118 @@
+
+
+/*Main Grid*/
+.appWrapper {
+    display: grid;
+    grid-template-columns: 250px 1200px 250px;
+    grid-gap: 0px;
+    grid-auto-rows: minmax(120px, auto);
+}
+.topLeftCell {
+  grid-column: 1;
+  grid-row: 1;
+  background-color: #00a5c6;  
+  text-align: center;
+
+}
+.content {
+    grid-column: 2;
+    grid-row: 2;
+    border-radius: 10px;
+}
+
+.bottomLeftCell{
+  grid-column: 1;
+  grid-row: 3;
+  background-color: #00a5c6;  
+}
+
+/*content grid Index*/
+.contentWraper {
+    display: grid;
+    grid-template-columns: 200px 248px 248px 300px;
+    grid-gap: 0px;
+    grid-auto-rows: minmax(60px, auto);
+}
+
+.rhythmImage {
+    grid-column: 2;
+    grid-row: 1;
+    cursor: pointer;
+}
+
+.pitchImage {
+    grid-column: 3;
+    grid-row: 1;
+    cursor: pointer;
+}
+
+img:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=40);
+}
+
+
+/*floating display*/
+
+.floatingDisplay {
+
+    display: grid;
+    grid-template-columns:  120px 120px 120px 120px 120px;
+    grid-template-rows: 50px 50px;
+    grid-gap: 0px;
+
+    width: 600px;
+    height: 100px;
+    transform: translate(150px, 200px);
+    background-color: wheat;  
+    opacity: 0.90;
+    border-radius: 10px;
+    text-align: center;
+    border: solid black 2px;
+    /*filter: alpha(opacity=40);*/
+
+}
+
+.textInstrument {
+    grid-column: 1 / 6;
+    grid-row: 1;
+
+}
+
+.prev{
+    grid-column: 1;
+    grid-row: 2;
+    width: 100px;
+    height: 25px;
+    opacity: 0.90;
+    text-align: center;
+    text-decoration-color: lightskyblue;
+
+}
+
+.skip{
+    grid-column: 3;
+    grid-row: 2;
+    width: 100px;
+    opacity: 0.90;
+    text-align: center;
+    float:center;
+    text-decoration-color: orangered;
+}
+
+.next{
+    grid-column: 5;
+    grid-row: 2;
+    width: 100px;
+    height: 30px;
+    opacity: 0.90;
+    text-align: center;
+    text-decoration-color: green;
+}
+
+#nextTag{
+    text-align: center;
+    text-decoration-color: green;
+}
+
+
